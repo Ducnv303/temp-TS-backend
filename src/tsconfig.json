@@ -1,0 +1,42 @@
+{
+    "compilerOptions": {
+        "alwaysStrict": false,
+        "esModuleInterop": true,
+        "module": "commonjs",
+        "types": [
+            "reflect-metadata",
+            "node"
+        ],
+        "target": "es6",
+        "noImplicitAny": false,
+        "moduleResolution": "node",
+        "strictNullChecks": false,
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "skipLibCheck": true,
+        "sourceMap": false,
+        "outDir": "dist",
+        "baseUrl": ".",
+        "removeComments": true,
+        "allowJs": true,
+        "lib": [
+            "es6",
+            "dom",
+            "es2019"
+        ],
+        "plugins": [
+            {
+                "transform": "ts-transformer-imports"
+            }
+        ],
+        "paths": {
+            "@*": [
+                "src/*"
+            ]
+        }
+    },
+    "include": [
+        "src"
+    ]
+}
